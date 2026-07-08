@@ -31,8 +31,6 @@ body{
     text-align:center;
 }
 
-/* ---------- STATUS CARD ---------- */
-
 .status-card{
 
     background:#15151f;
@@ -41,17 +39,21 @@ body{
 
     padding:50px 40px;
 
-    border:1px solid rgba(37,211,102,.15);
+    border:1px solid rgba(255,255,255,.05);
 
-    box-shadow:
-        0 20px 50px rgba(0,0,0,.45);
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
 
-    margin-bottom:45px;
+    margin-bottom:28px;
+
 }
 
 .status{
 
-    font-size:3rem;
+    position:relative;
+
+    display:inline-block;
+
+    font-size:2.8rem;
 
     font-weight:700;
 
@@ -59,9 +61,23 @@ body{
 
 }
 
-.dot{
+.status-dot{
 
-    color:#25D366;
+    position:absolute;
+
+    left:-28px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:16px;
+
+    height:16px;
+
+    background:#25D366;
+
+    border-radius:50%;
 
 }
 
@@ -89,8 +105,6 @@ body{
 
 }
 
-/* ---------- BUTTON ---------- */
-
 .button{
 
     display:flex;
@@ -99,15 +113,17 @@ body{
 
     align-items:center;
 
+    width:100%;
+
     height:95px;
 
     border-radius:28px;
 
     background:#15151f;
 
-    text-decoration:none;
-
     color:#fff;
+
+    text-decoration:none;
 
     font-size:1.55rem;
 
@@ -117,7 +133,7 @@ body{
 
     box-shadow:0 20px 50px rgba(0,0,0,.45);
 
-    transition:.18s;
+    transition:.18s ease;
 
 }
 
@@ -134,13 +150,17 @@ body{
 
 }
 
-/* ---------- API ---------- */
+.button:active{
+
+    transform:scale(.985);
+
+}
 
 .api{
 
     display:inline-block;
 
-    margin-top:28px;
+    margin-top:26px;
 
     color:#777790;
 
@@ -154,7 +174,7 @@ body{
 
 .api:hover{
 
-    color:#ffffff;
+    color:#fff;
 
 }
 
@@ -170,7 +190,9 @@ body{
 
 <div class="status">
 
-<span class="dot">●</span> ACTIVE
+<div class="status-dot"></div>
+
+Active
 
 </div>
 
@@ -195,8 +217,6 @@ Remaining
 <a class="button" href="#">
 Renew Subscription
 </a>
-
-<br>
 
 <a class="api" href="#">
 API Key
