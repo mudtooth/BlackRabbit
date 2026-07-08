@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API Key</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0a0a0f;
+    color:#fff;
+    font-family:'Inter',sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:100%;
+    max-width:760px;
+    padding:40px;
+    text-align:center;
+}
+
+.card{
+
+    background:#15151f;
+
+    border-radius:28px;
+
+    padding:40px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+
+}
+
+.title{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    margin-bottom:35px;
+
+}
+
+.qr{
+
+    width:260px;
+
+    height:260px;
+
+    margin:0 auto;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:18px;
+
+}
+
+.qr img{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    border-radius:8px;
+
+}
+
+.back{
+
+    display:inline-block;
+
+    margin-top:28px;
+
+    color:#777790;
+
+    text-decoration:none;
+
+    font-size:.95rem;
+
+    transition:.2s;
+
+}
+
+.back:hover{
+
+    color:#ffffff;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="title">
+API Key
+</div>
+
+<div class="qr">
+
+<img
+src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=Placeholder"
+alt="QR Code">
+
+</div>
+
+</div>
+
+<a class="back" href="subscription.html">
+Back
+</a>
+
+</div>
+
+</body>
+</html>
