@@ -88,5 +88,12 @@ alt="API Key QR Code">
 
 </div>
 
+<script>
+const params = new URLSearchParams(window.location.search);
+const deviceId = params.get("id");
+
+console.log("Device ID:", deviceId);
+</script>
+
 </body>
 </html>
